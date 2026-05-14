@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">FASHION</div>
+
+    <nav>
+        <a href="index.html">// HOME</a>
+        <a href="products.html">// PRODUCTS</a>
+        <a href="collections.html">// COLLECTIONS</a>
+    </nav>
+    <div class="cart-icon" onclick="toggleCart()">// cart</div>
+</header>
+
+<div class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-close" onclick="toggleCart()">←</div>
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <button onclick="goCheckout()">CHECKOUT</button>
+</div>
+
+<section class="collections-page ">
+    <h1>// ALL COLLECTIONS</h1>
+    <div class="collection-grid" id="collectionGrid"></div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column brand-section">
+            <div class="footer-logo">
+                <img src="images/ChatGPT_Image_8_2026_._18_45_55.png" alt="Logo">
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <span class="footer-tag">XXX</span>
+        </div>
+
+        <div class="footer-column links-section">
+            <ul>
+                <li><a href="index.html">// HOME</a></li>
+                <li><a href="products.html">// PRODUCTS</a></li>
+                <li><a href="collections.html">// COLLECTIONS</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column info-section">
+            <ul>
+                <li><a href="#">// PAYMENT & DELIVERY</a></li>
+                <li><a href="#">// PRIVACY POLICY</a></li>
+                <li><a href="#">// RETURNS & EXCHANGES</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

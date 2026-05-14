@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">FASHION</div>
+
+    <nav>
+        <a href="index.html">// HOME</a>
+        <a href="products.html">// PRODUCTS</a>
+        <a href="collections.html">// COLLECTIONS</a>
+    </nav>
+
+    <div class="cart-icon" onclick="toggleCart()">// cart</div>
+</header>
+
+
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-close" onclick="toggleCart()">←</div>
+
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <button onclick="goCheckout()">CHECKOUT</button>
+</div>
+
+<section class="hero">
+    <h1>THOUSAND CURSED ENEMIES</h1>
+    <p>DARK STREETWEAR</p>
+</section>
+
+
+<section class="products-preview">
+    <h2>// PRODUCTS</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card reveal" onclick="openProduct(1)">
+            <img src="images/шмотки/asakura Dynasty/asakura Dynasty s84 T-shirt/футболка перед (4).png">
+            <h3>ASAKURA DYNASTY T-SHIRT</h3>
+            <p>$120</p>
+        </div>
+
+        <div class="product-card reveal" onclick="openProduct(2)">
+            <img src="images/шмотки/elegia/elegia jacket/куртка перед (2).png">
+            <h3>ELEGIA JACKET</h3>
+            <p>$70</p>
+        </div>
+
+        <div class="product-card reveal" onclick="openProduct(3)">
+            <img src="images/шмотки/Elem3ntasonic/elem3ntasonic longsleeve/лонг перед новый (1).png">
+            <h3>ELEM3NTASONIC LONGSLEEVE</h3>
+            <p>$150</p>
+        </div>
+
+        <div class="product-card reveal" onclick="openProduct(4)">
+            <img src="images/шмотки/enemy/enemy system t-shirt/футболка перед (6).png">
+            <h3>ENEMY SYSTEM T-SHIRT</h3>
+            <p>$110</p>
+        </div>
+
+        <div class="product-card reveal" onclick="openProduct(5)">
+            <img src="images/шмотки/Vesper/vesper longsleeve/перед (6).png">
+            <h3>VESPER LONGSLEEVE</h3>
+            <p>$90</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="collections-preview">
+    <h2>// ALL COLLECTIONS</h2>
+
+    <div class="collection-grid">
+
+        <div class="collection-card reveal" onclick="openCollection('asakura')">
+            <img src="images/шмотки/asakura Dynasty/asakura Dynasty s84 Longsleeve/лонг перед2.png">
+            <div class="collection-info">
+                <h3>ASAKURA DYNASTY</h3>
+                <p>3 ITEMS</p>
+            </div>
+        </div>
+
+        <div class="collection-card reveal" onclick="openCollection('elegia')">
+            <img src="images/шмотки/elegia/elegia t-shirt/elegia футболка перед.png">
+            <div class="collection-info">
+                <h3>ELEGIA</h3>
+                <p>4 ITEMS</p>
+            </div>
+        </div>
+
+        <div class="collection-card reveal" onclick="openCollection('elem3ntasonic')">
+            <img src="images/шмотки/Elem3ntasonic/elem3ntasonic jersey blue/синее спереди (1).png">
+            <div class="collection-info">
+                <h3>ELEM3NTASONIC</h3>
+                <p>3 ITEMS</p>
+            </div>
+        </div>
+
+        <div class="collection-card reveal" onclick="openCollection('enemy')">
+            <img src="images/шмотки/enemy/enemy system hoodie white/белый перед.png">
+            <div class="collection-info">
+                <h3>ENEMY SYSTEM</h3>
+                <p>4 ITEMS</p>
+            </div>
+        </div>
+
+        <div class="collection-card reveal" onclick="openCollection('vesper')">
+            <img src="images/шмотки/Vesper/vesper hoodie/перед (2).png">
+            <div class="collection-info">
+                <h3>VESPER</h3>
+                <p>2 ITEMS</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column brand-section">
+            <div class="footer-logo">
+                <img src="images/ChatGPT_Image_8_2026_._18_45_55.png" alt="Logo">
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <span class="footer-tag">XXX</span>
+        </div>
+
+        <div class="footer-column links-section">
+            <ul>
+                <li><a href="index.html">// HOME</a></li>
+                <li><a href="products.html">// PRODUCTS</a></li>
+                <li><a href="collections.html">// COLLECTIONS</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column info-section">
+            <ul>
+                <li><a href="#">// PAYMENT & DELIVERY</a></li>
+                <li><a href="#">// PRIVACY POLICY</a></li>
+                <li><a href="#">// RETURNS & EXCHANGES</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>

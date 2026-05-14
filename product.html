@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a href="javascript:history.back()" class="back-link">← BACK</a>
+<section class="product-page">
+
+    <div class="gallery">
+        <div class="main-image-container" style="position: relative;">
+            <button class="nav-arrow prev" onclick="prevImage()">&#10094;</button>
+            <img id="mainImage" src="">
+            <button class="nav-arrow next" onclick="nextImage()">&#10095;</button>
+        </div>
+
+        <div class="thumbnails">
+            <img id="frontThumb" src="">
+            <img id="backThumb" src="">
+        </div>
+    </div>
+
+
+    <div class="product-info">
+
+        <h1 id="productName"></h1>
+
+        <p class="price" id="productPrice"></p>
+
+        <p id="productDescription"></p>
+
+        <button id="addBtn">ADD TO CART</button>
+
+    </div>
+
+</section>
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <h2>YOUR CART</h2>
+        <button onclick="toggleCart()">✕</button>
+    </div>
+    <div id="cartItems">
+    </div>
+    <div class="cart-footer">
+        <button onclick="goCheckout()">CHECKOUT</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+
+</body>
+</html>
